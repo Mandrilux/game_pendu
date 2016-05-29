@@ -24,10 +24,13 @@
 		/* check.c */
 
 int		 count_tab(char **tab);
+int		 is_end(char *str);
+int		 check_word(char *mystere, char *search, char c);
 
 		/* init.c */
 
 char		 *init_word();
+char		 *word_search(char *word);
 
 		/* str.c */
 
