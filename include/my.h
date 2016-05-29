@@ -5,7 +5,7 @@
 ** Login   <baptiste@epitech.net>
 **
 ** Started on  Wed May 18 12:49:26 2016
-** Last update Thu May 19 19:22:08 2016 
+** Last update Sun May 29 18:42:32 2016 
 */
 
 #ifndef MY_H_
@@ -14,19 +14,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <dirent.h>
+#include <time.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include "get_next_line.h"
-
-typedef	struct	s_leak
-{
-	void	**memory;
-}               t_leak;
-
-char		*strdup(const char *s);
 
 		/* check.c */
 
