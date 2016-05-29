@@ -5,13 +5,15 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Sun May 29 17:48:49 2016 
-## Last update Sun May 29 17:51:24 2016 
+## Last update Sun May 29 18:03:05 2016 
 ##
 
 NAME	:=	pendu
 
 SRC	:=	main.c \
-		init.c
+		init.c \
+		str.c \
+		check.c
 
 INC_DIR	:=	include
 
@@ -21,7 +23,7 @@ OBJ	:=	$(SRC:.c=.o)
 
 LIB	:=	-I./include/
 
-CFLAGS  :=	-Wall -Wextra -W -pedantic -ansi
+CFLAGS  :=	-Wall -Wextra -W -pedantic -ansi  -std=gnu99
 
 CFLAGS	+=	-I$(INC_DIR)
 
