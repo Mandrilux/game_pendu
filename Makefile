@@ -5,12 +5,13 @@
 ## Login   <baptiste@epitech.net>
 ## 
 ## Started on  Sun May 29 17:48:49 2016 
-## Last update Sun May 29 17:48:50 2016 
+## Last update Sun May 29 17:51:24 2016 
 ##
 
 NAME	:=	pendu
 
-SRC	:=	main.c
+SRC	:=	main.c \
+		init.c
 
 INC_DIR	:=	include
 
