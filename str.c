@@ -5,7 +5,7 @@
 ** Login   <baptiste@epitech.net>
 **
 ** Started on  Sun May 29 18:00:57 2016
-** Last update Sun May 29 18:40:50 2016 
+** Last update Thu Jun  2 21:00:25 2016 
 */
 
 #include "my.h"
@@ -34,4 +34,21 @@ char    **alloc(char **re_write, char *name)
       tmp[i + 1] = NULL;
     }
   return (tmp);
+}
+
+int	save_score(int tour, char *str)
+{
+  FILE* score = NULL;
+  char	*name;
+
+  printf("\nEntrez un nom ! \n");
+  if ((name = get_next_line(0)) == NULL)
+    return (-1);
+  score = fopen("score.txt", "w");
+  if (score != NULL)
+    {
+      fprintf(score, "[%s] trouvé en %d tour par %s", str, tour, name);
+      fclose(score);
+    }
+  return (1);
 }

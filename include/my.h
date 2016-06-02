@@ -35,6 +35,7 @@ char		 *word_search(char *word);
 		/* str.c */
 
 char		 **alloc(char **re_write, char *name);
+int		 save_score(int tour, char *str);
 
 		/* get_line.c */
 

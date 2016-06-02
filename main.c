@@ -5,7 +5,7 @@
 ** Login   <baptiste@epitech.net>
 **
 ** Started on  Sun May 29 17:48:59 2016
-** Last update Thu Jun  2 20:47:43 2016 
+** Last update Thu Jun  2 20:57:07 2016 
 */
 
 #include "my.h"
@@ -49,7 +49,10 @@ int	display_end(int	end, char *word)
   if (end == 0)
     printf("Vous avez perdu ! ");
   else
-    printf("Bravo vous avez gagné ! ");
+    {
+      printf("Bravo vous avez gagné ! ");
+      save_score(end, word);
+    }
   printf("Le mot mystere etais %s.\n",word);
   return (EXIT_SUCCESS);
 }
