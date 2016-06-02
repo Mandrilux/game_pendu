@@ -5,7 +5,7 @@
 ** Login   <baptiste@epitech.net>
 **
 ** Started on  Sun May 29 18:01:54 2016
-** Last update Sun May 29 19:06:44 2016 
+** Last update Thu Jun  2 20:45:18 2016 
 */
 
 #include "my.h"
@@ -35,13 +35,15 @@ int	is_end(char *str)
 int	check_word(char *mystere, char *search, char c)
 {
   int	i = -1;
+  int	flag = 0;
 
   while (mystere[++i] != '\0')
     {
       if (mystere[i] == c)
 	{
 	  search[i] = c;
+	  flag++;
 	}
     }
-  return (1);
+  return (flag);
 }
