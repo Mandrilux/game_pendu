@@ -43,5 +43,7 @@ int		 my_memset_len(char *s, char c, int size, int flag);
 		/* main.c */
 
 int		 main();
+int		 display_end(int end, char *word);
+void		 display_scoring(int end);
 
 #endif /* MY_H_ */
