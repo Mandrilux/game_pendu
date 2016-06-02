@@ -5,7 +5,7 @@
 ** Login   <baptiste@epitech.net>
 **
 ** Started on  Sun May 29 17:48:59 2016
-** Last update Thu Jun  2 20:46:16 2016 
+** Last update Thu Jun  2 20:47:43 2016 
 */
 
 #include "my.h"
@@ -33,7 +33,7 @@ int		main()
       printf("Le mot découvert est : %s\n", search);
       if ((c = get_next_line(0)) == NULL)
 	return (EXIT_FAILURE);
-      if (c[0] != '\0' && c[0] != '\n')
+      if (c[0] != '\0' && c[0] != '\n' && strlen(c) == 1)
 	{
 	  if (check_word(word, search, c[0]) == 0)
 	    end--;
